@@ -1,0 +1,95 @@
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --paragraphs: hsla(0, 0%, 100%, 0.75);
+  --light-grey: hsl(0, 0%, 95%);
+}
+
+body {
+  font-size: 15px;
+  background-color: var(--light-grey);
+}
+
+.contenedor {
+  height: 100vh;
+}
+
+.bg-orange {
+  background: var(--Bright-orange);
+}
+
+.color-orange {
+  color: var(--Bright-orange);
+}
+
+.bg-cyan {
+  background: var(--Dark-cyan);
+}
+
+.color-cyan {
+  color: var(--Dark-cyan);
+}
+
+.bg-dark {
+  background: var(--Very-dark-cyan);
+}
+
+.color-dark {
+  color: var(--Very-dark-cyan);
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: var(--light-grey);
+  padding-top: 30px;
+}
+
+p {
+  color: var(--paragraphs);
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 3vh;
+  padding-top: 30px;
+  margin-bottom: 100px;
+}
+
+.tarjetas {
+  min-height: 400px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.tarjetas .col-sm {
+  padding: 50px;
+}
+
+.bor-izq {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.bor-der {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.boton {
+  background-color: var(--light-grey);
+  border-radius: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media (max-width: 560px) {
+  .tarjetas {
+    margin-top: 5%;
+    height: auto;
+  }
+
+  .bor-izq {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .bor-der {
+    border-radius: 0px 0px 10px 10px;
+  }
+}
